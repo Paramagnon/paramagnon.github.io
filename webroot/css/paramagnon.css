@@ -11,7 +11,7 @@
 .sidebar a {
     display: block; 
     color: white;
-    padding: 30px;
+    padding: 25px;
     text-decoration: none;
     text-align: center;
 }
@@ -27,10 +27,17 @@
 }
 
 div.content {
-    margin-left: 200px;
+    margin-left: 350px;
     padding: 1px 16px;
     height: 1000px;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .sidebar {
