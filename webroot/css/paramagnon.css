@@ -1,7 +1,7 @@
 .sidebar{
     margin: 0;
     padding: 0;
-    width: 350px; 
+    width: 250px; 
     background-color: #2578ec;
     position: fixed;
     height: 100%; 
@@ -11,10 +11,18 @@
 .sidebar a {
     display: block; 
     color: white;
-    padding: 25px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
+    float: bottom;
 }
+.sidebar h1 {
+    display: block;
+    padding: 10px;
+    margin-top: 120px;
+    text-align: center;
+}
+
 
 .sidebar a.active {
     background-color: #7DB3FF;
@@ -27,8 +35,8 @@
 }
 
 div.content {
-    margin-left: 350px;
-    padding: 1px 16px;
+    margin-left: 250px;    
+    padding: 60px 16px;
     height: 1000px;
 }
 
@@ -46,6 +54,7 @@ body {
         position: relative;
     }
     .sidebar a {float: left;}
+    .sidebar h1 {margin-top: 0px;}
     div.content {margin-left: 0;}
 }
 
