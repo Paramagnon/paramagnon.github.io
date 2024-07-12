@@ -7,25 +7,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="webroot/css/paramagnon.css">   
 
-    <script src="webroot/js/script.js"></script>
+    <!-- <script src="webroot/js/script.js"></script> -->
 </head>
 <!-- End of header -->
 
-<div class ="sidebar">
+<ul class="sidebar">
     <h1>Paramagnon</h1>
-    <a href="/index.html">Home</a>    
-    <button class="dropdown-btn">Projects
-        
-    </button>
-    <div class="dropdown-container">
-        <a href="/Projects/3D_printer_LEDs.html">3D Printer LEDs</a>
-        <a href="/Projects/Proxxon_MF70_CNC.html">Proxxon MF70 CNC</a>
-        <a href="/Projects/Remote_PSU_control.html">Remote PSU control</a>
-    </div>
-    <a href="/News.html">News</a>
-    <a class="active" href="/AboutMe.html">About me</a>
-    <a href="/Contact.html">Contact</a>    
-</div>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="#">Projects</a>
+        <ul>
+          <li><a href="/Projects/3D_printer_LEDs.html">3D Printer LEDs</a></li>
+          <li><a href="/Projects/Proxxon_MF70_CNC.html">Proxxon MF70 CNC</a></li>
+          <li><a href="/Projects/Remote_PSU_control.html">Remote PSU control</a></li>
+          <li><a href="/Projects/Motor_driver.html">Motor driver</a></li>
+          <li><a href="/Projects/PCB_linear_actuator.html">PCB Linear Actuator</a></li>
+        </ul>
+    </li>      
+    <li><a href="/News.html">News</a></li>
+    <li class="active"><a href="/AboutMe.html">About me</a></li>
+    <li><a href="/Contact.html">Contact</a></li>
+</ul>
+
 
 <div class ="content">
     <h1>About me</h1>
