@@ -30,7 +30,28 @@
 
 <div class ="content">
     <h1>Proxxon MF70 CNC</h1>
-    <p>The content of this page is not finished</p>
+    <p float="left">
+        <img src="/Figures/CNC/CAD_View.PNG" width="24%"/>
+        <img src="/Figures/CNC/IMG_6383.JPG" width="37%"/>
+        <img src="/Figures/CNC/IMG_6384.JPG" width="37%"/>
+    </p>
+    <h2>Component selection</h2>
+    <p>This project originated from my fascination with metal working to create custom parts. Working with a 3D printer was fascinating to see how you could create something in a CAD software and see it come to life in a short time through 3D printing. The step towards metal working was, probably, a logical next step. For certain applications you simply require the strength and rigidity of metals. Since I do not have infinite room in my studio or, as a matter fact, even a separate room for hobbies, the requirement was to start small (but dream big). This led me to the of the shelf Proxxon MF 70 micro mill, which seemed to me like a good compromise between cost, size, and quality. The next step was to convert this milling machine into a CNC.</p>
+    
+    <p> The conversion from milling machine to CNC required the selection of a method of actuation, a method to power these actuators, and a method to control the movements. The NEMA17 stepper motors were selected which seemed to suffice in the torque availability. The initial goal was to use an Ender 3D printer control board and to compile GRBL to work on the Ender board. Due to not being a software magician, this goal was changed, since the amount of time spend was not getting me really far. The controller consists of an Arduino UNO with the CNC shield on top. This Arduino is running GRBL with no alterations. The stepper motors are wired directly to the CNC shield, and the shield is connected to a Meanwell 24V 10A power supply.  
+    </p>
+
+    <h2>Mechanical assembly</h2>
+
+
+
+    <h2>Enclosure</h2>
+    <p>The first test run with wood after installing the stepper motors worked, but resulted in my house filled with wood chips. This was the trigger to create an enclosure for the CNC to be placed into, which helped contain the chips, but also created the opportunity for better wire management. The enclosure is build from simple aluminum extrusions and MDF plates to mount the CNC to and to close the cube. The extrusion are connected using angular components which fit into the grooves of the extrusion. This prevents the need for drilling through the extrusions to connect the different elements. This only works since there is not a lot of mechanical load on the frame, and the frame is mostly stationary. </p>
+
+    <h2>RGB LEDs</h2>
+    <p>Since the project now has an enclosure, it is required for obvious esthetic reasons to include LEDs. Since the CNC is part of the furniture, in a limited amount of available space, it needs to be pretty. The lightning is installed similarly as the LEDs in the 3D printer (see other projects). The 24V from the power supply is stepped down using buck converter and this time the LEDs in the corner are connected to the same control output. The control is performed using an RDF Beetle, which I had on hand. This has an input a 4x4 matrix of buttons and as output the lighting of the corners and the lighting of the tool area. Both can be controlled by the buttons and independently turned on/off and switched in colour. 
+    </p>
+
 </div>
 
 
